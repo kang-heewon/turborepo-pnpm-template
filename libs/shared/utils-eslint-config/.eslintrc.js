@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
-  extends: ['plugin:@typescript-eslint/recommended', 'turbo'],
-  plugins: ['prettier', 'import'],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:jsonc/recommended-with-json', 'turbo'],
+  plugins: ['prettier', 'import', 'unused-imports'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -56,6 +56,7 @@ module.exports = {
         prefer: 'no-type-imports',
       },
     ],
+    'jsonc/sort-keys': ['error'],
   },
   overrides: [
     {
@@ -63,6 +64,7 @@ module.exports = {
       parser: 'jsonc-eslint-parser',
       plugins: ['package-json'],
       rules: {
+        'jsonc/sort-keys': 'off',
         'package-json/sort-collections': 'error',
       },
     },

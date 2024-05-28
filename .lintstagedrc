@@ -1,0 +1,10 @@
+{
+  "*.tsx": "eslint --fix",
+  "*.jsx": "eslint --fix",
+  "*.js": "eslint --fix",
+  "*.cjs": "eslint --fix",
+  "*.mjs": "eslint --fix",
+  "*.ts": "eslint --fix",
+  "*.mdx": "eslint --fix",
+  "*.json": "eslint --fix"
+}
